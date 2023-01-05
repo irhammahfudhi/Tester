@@ -1,1 +1,1 @@
-open selamatpagi.html
+git checkout selamatpagi.html
