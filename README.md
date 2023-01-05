@@ -1,1 +1,1 @@
-/../main/Singkat.html
+/../main/selamatpagi.html
