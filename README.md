@@ -1,1 +1,1 @@
-selamatpagi.html
+open selamatpagi.html
