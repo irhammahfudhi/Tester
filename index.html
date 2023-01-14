@@ -78,7 +78,23 @@ di background-image URL --><style>
       async function linkMusik(){
          audio = new Audio('https://feeldreams.github.io/menimeni.mp3');setTimeout(showDiv,100);
        } linkMusik();
-       
+ <hr>  
+ <form action="simpan.php" method="post">  
+ <table width="100%" border="0">  
+ <tr>  
+      <td width="150">Nama File</td>  
+      <td><input type="text" name="nama" required></td>  
+ </tr>  
+ <tr>  
+      <td width="150" valign="top">Isi Tulisan</td>  
+      <td><textarea name="isi" cols="50" rows="10" required></textarea></td>  
+ </tr>  
+ <tr>  
+      <td width="150"></td>  
+      <td><input type="submit" value="simpan"></td>  
+ </tr>  
+ </table>  
+ </form>         
       async function pesan(){
               	await swalst.fire({
                     title: 'Hai Aul!', 
