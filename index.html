@@ -1,131 +1,110 @@
-<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><link href="https://drive.google.com/uc?export=view&id=12fZ-OamCN_VYd1SMmhDF_I_l7H07Rltf" rel="stylesheet" type="text/css" /><script src="https://cobabuka.htmlku.repl.co/script.js"></script>
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link href="https://feeldreams.github.io/akukira/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  
 <head>
-<title>Script HTML</title>
+<title>Script HTML buat Kamu</title>
+<link rel="icon" type="image/x-icon" href="https://www.palingit.com/favicon.ico">
+<meta name="description" content="HTML Replit Coding">
 <!-- 
   Made with love by Rayys!
-
+  
      Blog: https://PalingIT.com
      Instagram: @rayyarrr
      TikTok: @rayy4r
      Email: rayyar0703@gmail.com
-
+     
   Thanks to all <3
 -->
 </head>
-<!-- Edit Wallpaper 
-di background-image URL --><style>
-:root {
---warna-bg: rgba(0, 0, 0, .25); 
---warna-teks: white;
---warna-bingkai: rgba(255, 255, 255, .8);
---bingkai: 10px;
---gaya-font: 'Ubuntu', sans-serif;
---gaya-font2: 'Dancing Script', sans-serif;
-}
-</style>
 <body>
 	
+   <!-- Ganti Audio di sini -->
+   <audio src="https://feeldreams.github.io/tobelove.mp3" id="linkmp3" class="sembunyi"></audio>
+   
    <div id="bodyblur">
-     <!-- Wallpaper --><img src="https://feeldreams.github.io/rumahan.jpeg" id="wallpaper" width="100%" height="100%"/><div id="beneranblur"></div>
+     <!-- Wallpaper --><img src="https://feeldreams.github.io/papjalan3.jpeg" id="wallpaper"/>
    </div>
-
+   
    <div id='Content'>
-   	
-     <div id="suratin" onClick="memulai();audio.play();">
-       <!-- Surat --><img src="https://rayyscoding.github.io/envelope.png"/>
+
+     <div id="ftAwal">
+       <!-- Stiker Pembuka -->
+       <img src="https://feeldreams.github.io/pandaputih.gif" id="ftoAwal"/>
      </div>
-     <p id="ket">Klik Suratnya!</p>
-   
-     <div><!-- Foto Akhir Edit di Bagian Bawah--><img src="" id="fotoakhir"/></div>
+
+     <div id="loveIn">
+       <!-- Tombol LOVE --><label class='lovein'>&#10084;</label>
+     </div>
+     <p id="ket">Sentuh LOVEnya!</p>
+
+     <div class="kumpulanstiker">
+         <!-- Stiker untuk Konten -->
+         <img src="https://feeldreams.github.io/raintogether.gif" id="fotostiker"/>
+         <img src="https://feeldreams.github.io/heart.png" id="fotostikerA"/>
+     </div>
+     
+     <div><div id='pergeseran'>
+     	
+        <p><b>
+	        <span id="inihalo"></span>
+        </b></p>
+        
+        <p><b>
+	        <span>aku cuma mau bilang</span>
+        </b></p>
+
+        <p><b>
+	        <span>saat pertama kali aku mengenalmu</span>
+        </b></p>
+
+        <p><b>
+	        <span>ku kira kamu hanya akan menjadi bagian pertemanan yang singkat</span>
+        </b></p>
+        
+        <p><b>
+	        <span>dan ternyata sampai saat ini</span>
+        </b></p>
+        
+        <p><b>
+	        <span id="iniakhir">kamu masih menjadi peran terpenting dalam hidupku</span>
+        </b></p>
+        
+     </div></div>
+
+     <p id="ketgeser">Klik untuk Geser!</p>
+
      <div><blockquote id='bq'>
+       <p id="halo" class="halo"></p>
        <p id="kalimat"></p>
-       <p id="kalimatc"></p>
+       
+       <p id="pesanAkhir" class="gaya4"></p>
+       
      </blockquote></div>
-   
-     <!-- Tombol Kirim Pesan -->
-     <div id="Tombol">
-       <a onClick="sjawab()">
-         <b>Kirim Pesan</b>
-       </a>
-     </div>
      
    </div>
 
 <!-- Jangan Edit Bagian Ini --><script>
-  function showDiv() {Content.style = "opacity:1;margin-top:15vh;";ket.style="margin-top:30px";}
-  function memulai(){suratin.style="transition:all 1s ease;transform:scale(.1);opacity:0";ket.style="transition:all 1s ease;transform:scale(.1);opacity:0";setTimeout(pesan,300)}
-  function kpemb() {bodyblur.style="opacity:.4;animation:none";beneranblur.style="-webkit-backdrop-filter:blur(5px); backdrop-filter:blur(5px)";wallpaper.style="transform: scale(1.6)";suratin.style="display:none";ket.style="display:none";fotoakhir.style="display:inline-flex;";setTimeout(ftmuncul,100);Content.style = "opacity:1;margin-top:2vh;";bq.style = "opacity:1;visibility:visible;margin-top:5px";setTimeout(ngetik,500)}
-  function ftmuncul(){fotoakhir.style.transform="scale(1)";fotoakhir.style.opacity="1";}
-  function tombol(){Tombol.style="margin-top:15px;opacity:1;transform: scale(1);";ftom=1;} ftom=0; function fakhiran(){document.getElementById("akhiran").style = "display:inline-flex";}
-  const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,}); const swalst = Swal.mixin({allowOutsideClick: false, showConfirmButton: false, timer: 3500, timerProgressBar: true, imageWidth: 100, imageHeight: 100,}); const style = document.createElement('style'); var today = new Date();var dd = String(today.getDate()).padStart(2, '0');var mm = String(today.getMonth() + 1).padStart(2, '0');var yyyy = today.getFullYear();const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;
-  function setel(){audio.play();} function setel2(){bgm.play();} function sjawab(){if(ftom==1){Tombol.style="display:none";jawab();}}
-  function otomatis() {befanimkata();setTimeout(animkata,300);} function befanimkata(){kalimatc.style="transform:scale(.3);";} function animkata() {kalimatc.style="transform:scale(1);";}
+  const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2500, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); audio = new Audio('' + linkmp3.src); ftganti=0;fungsi=0;fungsiAwal=0;deffotostiker=fotostiker.src;function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);Content.style = "opacity:1;margin-top:14vh"; const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80,}); 
 
-  function kemunculan(){otomatis();kalimatc.innerHTML = ktbwh2;setTimeout(kemunculan2,2200);} function kemunculan2(){otomatis();kalimatc.innerHTML = ktbwh3;setTimeout(kemunculan3,2200);} function kemunculan3(){otomatis();kalimatc.innerHTML = katangetik2;setTimeout(kemunculan,2200);}
-  var aa=0,katangetik;function ngetik() {if(aa<katangetik.length){kalimat.innerHTML += katangetik.charAt(aa);aa++;setTimeout(ngetik,80);} if(aa==katangetik.length){kalimat.style="margin-bottom:30px";setTimeout(ngetik2,300);}}
-  var ai=0,katangetik2;function ngetik2() {if(ai<katangetik2.length){kalimatc.innerHTML += katangetik2.charAt(ai);ai++;setTimeout(ngetik2,180);} if(ai==katangetik2.length){setTimeout(kemunculan,2200);setTimeout(tombol,700)}}
-  async function jawab(){await swals.fire('Kirim pesan ke WhatsApp aku, ya!');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
-</script> <!-- Sampai Sini -->
+pesanAkhir1 = "oh ya sebelum Terlambat, aku mau bilang:";
+pesanAkhir2 = "thank you for coming in my life, i'm very lucky to have met you. i know people come and go, i hope you will always beside me, i promise i will always love u and you will always be my favorite person..";
+pesanAkhir3 = "i love uuu ><";
 
-<!-- Ganti KataÂ², Foto, Lagu di bawah ya
-1) Upload foto ke https://postimages.org
-     buat dapetin linknya
-2) Ganti Lagu Upload ke replit.com
-     atau bisa juga ke mailboxdrive.com -->
+totalPesan = 6; //Input total pesan (slide) di sini ya!
 
-<script type="text/javascript">
-      async function linkMusik(){
-         audio = new Audio('https://feeldreams.github.io/menimeni.mp3');setTimeout(showDiv,100);
-       } linkMusik();
-      
-      async function pesan(){ 
-              	await swalst.fire({
-                    title: 'Hai Aul!', 
-                    imageUrl: 'https://feeldreams.github.io/bunga.gif',
-                  });
-                  
-                  await swalst.fire({
-                    title: 'Btw, kamu lucu banget sii', 
-                    imageUrl: 'https://feeldreams.github.io/gumush.gif',
-                  });
-                  
-                  var { isConfirmed: prtanya1 } = await swals.fire({
-                        title: `Boleh Peluk ga ?`,
-                        imageUrl: 'https://feeldreams.github.io/tarikin.gif',
-                        confirmButtonText: 'Boleh',
-                        cancelButtonText: 'Engga', showCancelButton: true,
-                  });
-                  if(prtanya1){varjwb1 = "Boleh";} else {varjwb1 = "Gak boleh";}
-                  
-                  await swalst.fire({
-                    title: 'Hehe, Canda aja kok ', 
-                    imageUrl: 'https://feeldreams.github.io/emawh.gif',
-                  });
-                  
-                  await swalst.fire({
-                    title: 'Oh iya, Jaga kesehatanmu ya ', 
-                    imageUrl: 'https://feeldreams.github.io/g5.gif',
-                  });
-                  
-                  await swalst.fire({
-                    title: 'Jangan sampe telat makan ', 
-                    imageUrl: 'https://feeldreams.github.io/lompatin.gif',
-                  });
-                  
-                  await swalst.fire({
-                    title: 'Nanti lucunya ilang lohh ', 
-                    imageUrl: 'https://feeldreams.github.io/sinisini.gif',
-                  });
-                  
-                      fotoakhir.src = "https://feeldreams.github.io/tos.gif";
-                      katangetik = "Dah segitu aja yaa, Makasii  ><      ";
-                      katangetik2 = " PAP Donk XD";
-                      ktbwh2 = "Jaga kesehatanmu ya ";
-                      ktbwh3 = "Jangan sampe sakit loh ";
-                      
-                      pesanwhatsapp = "Love You ><";setTimeout(kpemb,300);
-       }
 </script>
+<script src="https://feeldreams.github.io/akukira/script.js"></script>
+<!-- Sampai Sini -->
 </body>
-</html>
+  </html>
