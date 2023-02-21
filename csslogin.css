@@ -1,0 +1,85 @@
+#loginForm {
+    display: flex;
+    position: absolute;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url(bg.jpg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    background-color: rgba(31, 30, 30, 0.5);
+    width: 400px;
+    height: 500px;
+    gap: 5px;
+    border-radius: 15px;
+}
+
+.judul {
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    position: relative;
+    font-size: 50PX;
+}
+
+
+.label-login{
+    margin: 5px 0px;
+    position:relative;
+    padding: 0px 20px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input {
+    position:relative;
+    align-self: center;
+    width: 80%;
+    height: 35px;
+    margin: 0px 20px;
+    border-radius: 8px;
+    border-style: none;
+}
+
+#input {
+    position:relative;
+    align-self: center;
+    width: 80%;
+    height: 35px;
+    margin: 0px 20px;
+    border-radius: 8px;
+    border-style: none;
+}
+
+
+
+.submit{
+    margin: 20px 0px;
+    text-transform:uppercase;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    align-self: center;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(0, 255, 255, 0.452);
+}
+
+.submit:hover{
+    background-color: rgb(25, 255, 36);
+    color: aliceblue;
+}
