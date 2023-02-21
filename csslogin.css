@@ -84,3 +84,139 @@ body{
     background-color: rgb(25, 255, 36);
     color: aliceblue;
 }
+body{
+    margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+.loginForm {
+    overflow: hidden;
+    background-color: rgba(67, 78, 70, 0.322) ;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 5px 20px 50px #000;
+    
+}
+
+#chk {
+    display: none;
+}
+
+.loginPart {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .8s ease-in-out;
+ 
+}
+
+.judul-login {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 50PX;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    transition: .8 ease-in-out;
+}
+
+.judul-sign {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 25, 49);
+    font-weight: bold;
+    font-size: 50PX;
+    padding-top: 30px;
+    margin: 30px auto;
+    transition: .8 ease-in-out;
+}
+
+
+label{
+    display: flex;
+    margin: 15px 30px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input {
+    display: flex;
+    width: 75%;
+    height: 20px;
+    justify-content: center;
+    margin: 10px auto;
+    border-radius: 8px;
+    border-style: none;
+    padding: 10px ;
+}
+
+
+.submit{
+    display: block;
+    margin: 20px auto;
+    text-transform:uppercase;
+    justify-content: center;
+    width: 80%;
+    height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 255, 255, 0.452);
+    transition: .8 ease-in-out;
+}
+
+.submit:hover{
+    background-color: rgb(25, 255, 36);
+    color: aliceblue;
+}
+
+.signPart {
+    height: 460px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 60% / 20%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+
+.signPart > form > h1 {
+    margin-top: 40px;
+    padding-top: 30px;
+    color: #302b63;
+    transition: .8s ease-in-out;
+}
+.signPart > label {
+    color: #302b63;
+    padding-top: 10px;
+    transition: .8s ease-in-out;
+}
+
+#chk:checked ~ .signPart{
+	transform: translateY(-450px);
+    transition: .8s ease-in-out;
+
+}
+
+#chk:checked ~ .signPart label{
+    color: #302b63;
+    transition: .8s ease-in-out;
+}
+
+#chk:checked ~ .loginPart{
+    transform: scale(.9);
+    transition: .8s ease-in-out;
+}
