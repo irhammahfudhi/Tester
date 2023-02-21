@@ -1,159 +1,27 @@
-<html>
-  <meta charset='UTF-8'/>
-  <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
-  <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
-  <link href="https://drive.google.com/uc?export=view&id=1YJYXnR_269LoOvfoAu_Zi1u4VHAxLCis" rel="stylesheet" type="text/css" />
-  <script src="https://haihalo.feeldream.repl.co/script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Script HTML</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="csslogin.css">
 </head>
-<style>
-    :root {
-    --warna-bg: rgba(255, 255, 255, 1);
-    --warna-teks: #595959;
-    --warna-bingkai: #fff;
-    --bingkai: 4px;
-    --bingkai-kiri: 2px solid var(--warna-bingkai);
-    --bingkai-kanan: 2px solid var(--warna-bingkai);
-    --warna-bg2: rgba(0, 0, 0, .3); 
-    --warna-teks2: white;
-    --warna-bingkai2: rgba(255, 255, 255, .8);
-    --gaya-font: 'Josefin Sans', sans-serif;
-    --gaya-font2: 'Ubuntu', sans-serif;
-}
-</style>
 <body>
-	
-   <!-- Ganti Audio di sini --><audio id="linkmp3">https://feeldreams.github.io/papapa.mp3</audio>
-   
-   <div id="bodyblur">
-     <!-- Wallpaper --><img src="hbdwp.jpg" id="wallpaper"/>
-   </div>
-
-   <div id='Content'>
-   	
-     <div id="suratin" onClick="memulai();audio.play();">
-       <!-- Tombol Surat --><img src="https://rayyscoding.github.io/envelope.png"/>
-     </div>
-     <p id="ket">Klik !</p>
-   
-   <!-- Stiker untuk Pesan Awal --><div id="pesanstiker">
-		<img id="stiker1" src="https://feeldreams.github.io/peach1.gif"/>
-		<img id="stiker2" src="https://feeldreams.github.io/peach11.gif"/>
-		<img id="stiker3" src="https://feeldreams.github.io/peach2.gif"/>
-		<img id="stiker4" src="maaf.gif"/>
-	</div>
-
-   <!-- Pesan Awal -->
-   <script id="pesanAwal">
-   	async function pesanutama(){
-   	  await swalst.fire({
-            title: 'Assalamualaikum ! ❤️',
-            imageUrl: '' + stiker1.src,
-         });   	
-            await swalst.fire({
-            title: 'Aku Pengen Minta Maaf ke Kamu ',
-            imageUrl: '' + stiker2.src,
-         });
-            await swalst.fire({
-            title: 'Maaf Kalo Aku banyak salah :(',
-            imageUrl: '' + stiker3.src,
-         });
-            await swalst.fire({
-            title: ' ',
-            imageUrl: '' + stiker4.src,
-         });
-         mulaikonten();
-       }
-     </script>
-   
-     <div><blockquote id='bq'>
-       <div>
-         <!-- Stiker untuk Konten -->
-         <img src="https://feeldreams.github.io/bunga.gif" id="fotoakhir"/>
-         <img src="https://feeldreams.github.io/cilukba.gif" id="fotoakhir2"/>
-       </div>
-
-       <!-- Konten Pertanyaan -->
-       <p id="kalimat">Maaf ya,</p>
-       <p id="kalimatb">Selamat Ulang Tahun ❤️ </p>
-       <p id="kalimatc">Semoga Panjang Umur dan Sehat selalu !<br> di Maafin kan ? hehe 😆
-       </p>
-
-       <!-- Konten Jawaban -->
-       <p id="kalimat2">Yeaayy!!!🥳</p>
-       <p id="kalimatb2"></p>
-       <p id="kalimatc2">Makasih, xixixi😆❤️</p>
-     </blockquote></div>
-
-      <!-- Pesan Ditolak -->
-     <div id="pesanditolak">
-       <img id="stikerditolak" src="https://feeldreams.github.io/ywdh.gif"/>
-       <p id="kataditolak">Yaahh🥺 yaudah deh:(</p>
-     </div>
-   
-     <!-- Tombol Multifungsi -->
-     <div id="Tombol">
-       <a id="By" onClick="multifungsi()">
-         <b id="tmbl">Iya !</b>
-       </a>
-       
-       <a id="Bn" onClick="ditolak()">Engga !</a>
-     </div>
-     
-   </div>
-
-<!-- Jangan Edit Bagian Ini --><script>
-  var ai=0,katangetik2;ftom=0;jikapr=1;ftganti=0;flag=1;flagg=1;fungsi=0;function showDiv() {pesanwhatsapp = "Love You. . . !><";Content.style = "opacity:1;margin-top:15vh;";ket.style="margin-top:30px";}
-  function memulai(){suratin.style="transition:all 1s ease;transform:scale(.1);opacity:0";ket.style="transition:all 1s ease;transform:scale(.1);opacity:0";setTimeout(pesanutama,300)}
-  function mulaikonten() {otomatis();suratin.style="display:none";ket.style="display:none";Content.style = "opacity:1;margin-top:0;";bodyblur.style="opacity:.7;animation:none";wallpaper.style="transform: scale(2);opacity:0;";fotoakhir.style="display:inline-flex;";setTimeout(ftmuncul,200);bq.style = "position:relative;opacity:1;visibility:visible;transform: scale(1);border-radius:var(--bingkai);margin-top:0";fungsi=1;setTimeout(tombol,500);}
-  
-  function ftmuncul(){if(ftganti==0){fotoakhir.style="display:inline-flex;opacity:1;transform:scale(1)";}else{fotoakhir.src = fotoakhir2.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);background:rgba(255,255,255,.5);border:2px double var(--warna-bingkai);border-radius:8%;padding:10px;";}}
-  function fthilang(){fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(.1)";}
-  
-  function tombol(){Tombol.style="opacity:1;transform: scale(1);";Bn.style="margin:12px 0 12px 12px";ftom=1;}
-  function multifungsi(){if(ftom==1){diterima();} if(ftom==5){menuju();}}
-  async function menuju(){await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;Tombol.style="margin-top:15px;opacity:1;transform: scale(1);";} setTimeout(showDiv,100);
-
-  const swalst = Swal.mixin({timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 100,}); audio = new Audio('' + linkmp3.innerHTML);const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,}); const style = document.createElement('style'); var today = new Date();var dd = String(today.getDate()).padStart(2, '0');var mm = String(today.getMonth() + 1).padStart(2, '0');var yyyy = today.getFullYear();const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;
-
-  function otomatis() {befanimkata();setTimeout(animkata,400);} 
-  function befanimkata(){kalimat.style="transform:scale(.3);";kalimatb.style="transform:scale(.3);";kalimatc.style="transform:scale(.3);";} 
-  function animkata() {kalimat.style="transform:scale(1);";kalimatb.style="transform:scale(1);";kalimatc.style="transform:scale(1);";}
-  
-  function otomatis2() {befanimkata2();setTimeout(animkata2,700);} 
-  function befanimkata2(){kalimat.style.opacity="0";kalimatb.style.opacity="0";kalimatc.style.opacity="0";} 
-  function animkata2() {kalimat.innerHTML = kalimat2.innerHTML;kalimatb.innerHTML = kalimatb2.innerHTML;kalimatc.innerHTML = kalimatc2.innerHTML;kalimat.style.opacity="1";kalimatb.style.opacity="1";kalimatc.style.opacity="1";}
-
-  function ngetik2() {if(ai<katangetik2.length){kalimatd.innerHTML += katangetik2.charAt(ai);ai++;setTimeout(ngetik2,100);} if(ai==katangetik2.length){kalimatd.style.animation="rto 1s infinite alternate";}}
-  
-  function sbakhir(){By.style = "background:var(--warna-bg2);color:var(--warna-teks2);border-right:var(--bingkai-kanan);border-left:var(--bingkai-kiri);";Bn.style.display="none";setTimeout(stakhir,500);} function stakhir(){tmbl.innerHTML="💌 Kirim";Tombol.style="margin-top:10px;opacity:1;transform: scale(1)";ftom=5;fungsi=0;}
-  
-  async function diterima(){
-      setInterval(createHeart,200);
-      fthilang();ftganti=1;
-      setTimeout(ftmuncul,400);
-      wallpaper.style="transform: scale(1)";
-      bq.style = "position:relative;opacity:1;visibility:visible;transform: scale(1);transition:all 1s ease;border-radius:var(--bingkai);margin-top:0;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);background:var(--warna-bg2);color:var(--warna-teks2);border-right:var(--bingkai-kanan);border-left:var(--bingkai-kiri);";
-      Tombol.style="opacity:0;transform: scale(.1);";
-      Content.style = "opacity:1;margin-top:7vh;";
-      setTimeout(sbakhir,1000);otomatis2();
-   }
-  
-  async function ditolak(){
-  	if(fungsi==1){
-  	Tombol.style="transition:all .3s ease;opacity:0";await swalst.fire({title: '' + kataditolak.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src,});tombol();
-  	}
-   }
-   
-   const body = document.querySelector("body");function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
-</script>
-<!-- Sampai Sini -->
+<div id="loginForm">
+    <div class="container">
+        <h1 class="judul">Login</h1>
+        <div class="label-login">Username</div>
+        <input type="text" class="input" placeholder="Masukkan nama pengguna. . .">
+        <div class="label-login" >password</div>
+        <input type="text" id="input" placeholder="Masukkan Kata Sandi. . ." >
+        <button onclick="submit()" name="submit" class="submit">login</button>
+    </div>
+    <script>
+        function submit() {
+            window.open("https:/www.google.com");
+        }
+    </script>
+</div>
 </body>
 </html>
